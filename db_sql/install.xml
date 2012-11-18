@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===========================================================================
+ $Id: install.xml,v 1.3 2012/10/02 14:18:02 mackermann Exp $
+
+ Copyright(c) 2001-2012 ERCOT. All rights reserved.
+
+ THIS PROGRAM IS AN UNPUBLISHED  WORK AND TRADE SECRET OF THE COPYRIGHT HOLDER,
+ AND DISTRIBUTED ONLY UNDER RESTRICTION.
+
+ No  part  of  this  program  may be used,  installed,  displayed,  reproduced,
+ distributed or modified  without the express written consent  of the copyright
+ holder.
+
+ EXCEPT AS EXPLICITLY STATED  IN A WRITTEN  AGREEMENT BETWEEN  THE PARTIES, THE
+ SOFTWARE IS PROVIDED AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+ INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR
+ PURPOSE, NONINFRINGEMENT, PERFORMANCE, AND QUALITY.
+============================================================================ -->
+
+<project name="Raptor_Database_Installer" default="init" basedir=".">
+
+<!-- INSTALLATION PROPERTIES -->
+<!-- ======================= -->
+
+    <!-- Initialize Properties -->
+    <property file="${basedir}/install.properties"/>
+
+	<property name="install.mode"  value="install"/>
+
+    <!-- Default Database Paramters for Oracle Connections -->
+    <property name="db.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+    <property name="db.jdbc.url"    value="jdbc:oracle:thin"/>
+	<property name="db.raptor.url"  value="${db.jdbc.url}:@${db.host}:${db.port}:${db.service}"/>
+    <property name="dir.sql"        location="${basedir}"/>
+
+    <!-- Define External Library Location/JARs -->
+    <path id="lib.classpath">
+        <fileset dir="${basedir}/../lib">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="lib.classpath"/>
+
+	<!-- Define Internal Macros -->
+    <macrodef name="dosql">
+    	<attribute name="file"/>
+    	<attribute name="type"     default="sql"/>
+    	<attribute name="url"      default="${db.raptor.url}"/>
+        <attribute name="user"     default="${db.schema}"/>
+        <attribute name="password" default="${db.password}"/>
+        <sequential>
+        	<if><equals arg1="@{type}" arg2="PLSQL"/><then>
+                <sql driver="${db.jdbc.driver}" url="@{url}" userid="@{user}" password="@{password}" onerror="abort" classpathref="lib.classpath"
+        		     delimiter="/" delimitertype="row" keepformat="true" expandProperties="true" src="@{file}"/></then>
+            <else>
+                <sql driver="${db.jdbc.driver}" url="@{url}" userid="@{user}" password="@{password}" onerror="abort" classpathref="lib.classpath"
+            	     delimiter=";" delimitertype="normal" keepformat="false" src="@{file}" /></else>
+            </if>
+        </sequential>
+    </macrodef>
+
+<!-- INTERNAL DEPLOYMENT TARGETS -->
+<!-- =========================== -->
+
+    <!-- Create and Populate All Raptor Components in Oracle -->
+    <target name="install_raptor">
+        <echo message="Installing Raptor Database Components..."/>
+        <if><equals arg1="${install.mode}" arg2="install"/><then>
+        	<echo message="    - Creating Tables"/>
+        	    <dosql file="${dir.sql}/create_dummy.sql"/>
+        	    <dosql file="${dir.sql}/create_Ghost_VM.sql"/>
+        	<echo message="    - Creating Views"/>
+        	    <dosql file="${dir.sql}/create_Ghost_View.sql"/>
+        	<echo message="    - Creating Sequences"/>
+        	    <dosql file="${dir.sql}/create_Ghost_Sequence.sql"/>
+        	<echo message="    - Creating Objects"/>
+                <dosql file="${dir.sql}/create_ghost_objects.sql" type="PLSQL"/>
+        	<echo message="    - Creating Job Queue"/>
+                <dosql file="${dir.sql}/create_Ghost_Queue.sql" type="PLSQL"/>
+        	<echo message="    - Creating Packages"/>
+        	    <dosql file="${dir.sql}/Ghost_Util.sql"      type="PLSQL"/>
+                <dosql file="${dir.sql}/Ghost_Blob_Util.sql" type="PLSQL"/>
+                <dosql file="${dir.sql}/Ghost_Jobs.sql"      type="PLSQL"/>
+        	<echo message="    - Compiling Packages"/>
+        	    <dosql file="${dir.sql}/Ghost_compile_packages.sql" type="PLSQL"/>
+        </then>
+        </if>
+    </target>
+
+<!-- MAIN  TARGETS -->
+<!-- ============= -->
+    
+    <target name="print_install_info">
+        <tstamp>
+            <format property="install.start" pattern="yyyy-MM-dd HH:mm:ss" locale="en"/>
+        </tstamp>
+        <echo message=" "/>
+        <echo message="=====================================================" />
+        <echo message="Raptor Settlement System Database Installer v0.0.0.1"/>
+        <echo message="=====================================================" />
+        <echo message="Database Connection Properties"/>
+        <echo message="-----------------------------------------------------"/>
+        <echo message="Host System    : ${db.host}"/>
+    	<echo message="Listener Port  : ${db.port}"/>
+    	<echo message="Oracle Instance: ${db.service}"/>
+    	<echo message="Raptor Schema  : ${db.schema}"/>
+        <echo message="-----------------------------------------------------"/>
+        <echo message="Install Started: ${install.start}" />
+        <echo message="Installer Mode : ${install.mode}" />
+        <echo message="====================================================="/>
+        <echo message=" "/>
+    </target>    
+
+    <!-- Install Raptor -->
+    <target name="install" depends="install_raptor" description="Installs Raptor Database Components">
+
+        <!-- Update installation information in RAPTOR_INSTALL_HISTORY -->
+        <!-- <antcall target="update_install_info"/> -->
+        
+    </target>
+    
+    <!-- Uninstall Raptor -->
+    <target name="uninstall" description="Uninstalls Raptor Database Components">
+        <echo message="Removing Previous Raptor Installation..."/>
+    	<dosql type="PLSQL" file="${dir.sql}/Ghost_uninstall.sql"/>
+    </target>
+    
+<!-- INSTALLATION COMMANDS -->
+<!-- ===================== -->
+    
+    <target name="init" depends="print_install_info" description="Main Installation Target">
+        
+        <antcall target="${install.mode}"/>
+        
+        <echo message=" "/>
+        <echo message="====================================================="/>
+        <echo message="Raptor ${install.mode} complete."/>
+        <echo message="====================================================="/>
+
+    </target>
+
+</project>
+     

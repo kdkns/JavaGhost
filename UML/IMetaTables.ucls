@@ -1,0 +1,141 @@
+<class-diagram version="1.0.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IMetaTable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaTable.java" binary="false">    
+    <position height="-1" width="-1" x="348" y="276"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="2" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.GhostAttributes.IAttributeTableList" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/GhostAttributes/IAttributeTableList.java" binary="false">    
+    <position height="-1" width="-1" x="635" y="62"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IRaptorBlobTable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IRaptorBlobTable.java" binary="false">    
+    <position height="-1" width="-1" x="153" y="579"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="4" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IMetaChildTable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaChildTable.java" binary="false">    
+    <position height="-1" width="-1" x="443" y="603"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="5" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.MetaTableTypes.IMetaChildHeaderInsertTable" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaChildHeaderInsertTable.java" binary="false">    
+    <position height="-1" width="-1" x="544" y="735"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="6" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IMetaParentTable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaParentTable.java" binary="false">    
+    <position height="-1" width="-1" x="703" y="485"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="7" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IMetaField" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaField.java" binary="false">    
+    <position height="-1" width="-1" x="1066" y="213"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="8" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.IMetaFieldConstant" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/IMetaFieldConstant.java" binary="false">    
+    <position height="-1" width="-1" x="1399" y="428"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.MetaTableTypes.MetaField" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/MetaField.java" binary="false">    
+    <position height="-1" width="-1" x="1068" y="705"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="10" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.MetaTableTypes.Tables.MetaFieldConstant" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/Tables/MetaFieldConstant.java" binary="false">    
+    <position height="-1" width="-1" x="1527" y="595"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="11" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.MetaTableTypes.Tables.AbstractMetaTable" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/MetaTableTypes/Tables/AbstractMetaTable.java" binary="false">    
+    <position height="-1" width="-1" x="174" y="937"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <realization>    
+    <bendpoint x="300" y="672"/>    
+    <end type="SOURCE" nodeId="11"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="1"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="3"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="10"/>    
+    <end type="TARGET" nodeId="8"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="10"/>    
+    <end type="TARGET" nodeId="9"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="9"/>    
+    <end type="TARGET" nodeId="7"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="4"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="8"/>    
+    <end type="TARGET" nodeId="7"/>  
+  </generalization>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="false" private="false"/>    
+    <operations public="true" package="true" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

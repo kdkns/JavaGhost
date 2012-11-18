@@ -1,0 +1,132 @@
+<class-diagram version="1.0.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.IGhostVariable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/IGhostVariable.java" binary="false">    
+    <position height="-1" width="-1" x="705" y="-195"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.AbstractGhostVariable" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/AbstractGhostVariable.java" binary="false">    
+    <position height="-1" width="-1" x="613" y="789"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="3" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.AbstractGhostCollection" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/AbstractGhostCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1317" y="-81"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostBlob" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostBlob.java" binary="false">    
+    <position height="-1" width="-1" x="604" y="246"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostCollection" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1358" y="285"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostMetaBlob" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostMetaBlob.java" binary="false">    
+    <position height="-1" width="-1" x="261" y="190"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostNumber" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostNumber.java" binary="false">    
+    <position height="-1" width="-1" x="847" y="262"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="8" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostString" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostString.java" binary="false">    
+    <position height="-1" width="-1" x="1057" y="267"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.Variable.GhostMetaBlobCollection" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/Variable/GhostMetaBlobCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1157" y="713"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <generalization>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="8"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <generalization>    
+    <bendpoint x="1163" y="240"/>    
+    <end type="SOURCE" nodeId="9"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <realization>    
+    <bendpoint x="970" y="82"/>    
+    <end type="SOURCE" nodeId="8"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <association>    
+    <end type="SOURCE" nodeId="3" navigable="false">      
+      <attribute name="_ghostCollection">        
+        <position height="14" width="83" x="874" y="-168"/>      
+      </attribute>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" nodeId="1" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <realization>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

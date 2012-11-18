@@ -1,0 +1,205 @@
+<class-diagram version="1.0.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.AbstractDBObject" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/AbstractDBObject.java" binary="false">    
+    <position height="-1" width="-1" x="727" y="208"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.IDBObject" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/IDBObject.java" binary="false">    
+    <position height="-1" width="-1" x="180" y="-112"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="3" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.DBObject.DBString.DbProcedureTypes" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBString.java" binary="false">    
+    <position height="-1" width="-1" x="75" y="559"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBString" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBString.java" binary="false">    
+    <position height="-1" width="-1" x="202" y="296"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBNumber" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBNumber.java" binary="false">    
+    <position height="-1" width="-1" x="830" y="964"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="6" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.DBObject.DBNumber.DbProcedureTypes" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBNumber.java" binary="false">    
+    <position height="-1" width="-1" x="771" y="1305"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="7" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBBlob" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBBlob.java" binary="false">    
+    <position height="-1" width="-1" x="233" y="890"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="8" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBBlob.DbProcedureTypes" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBBlob.java" binary="false">    
+    <position height="-1" width="-1" x="108" y="1255"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="9" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.DBObject.DBCollection.DbFunctionTypes" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1259" y="1199"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="10" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBCollection.MetaInfo" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1561" y="1309"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBCollection" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1433" y="512"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.DBObject.DBCollection.MetaInfo.MetaSQLDatum" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBCollection.java" binary="false">    
+    <position height="-1" width="-1" x="1514" y="1674"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="13" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBStatmentExecutor" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBStatmentExecutor.java" binary="false">    
+    <position height="-1" width="-1" x="1323" y="-155"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="14" corner="BOTTOM_RIGHT" language="java" 
+    name="com.ercot.java.ghost.DBObject.DBMetaBlob.DbMetaProcedureTypes" project="JavaGhost" 
+    file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBMetaBlob.java" binary="false">    
+    <position height="-1" width="-1" x="811" y="1697"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="15" corner="BOTTOM_RIGHT" language="java" name="com.ercot.java.ghost.DBObject.DBMetaBlob" 
+    project="JavaGhost" file="/JavaGhost/src/com/ercot/java/ghost/DBObject/DBMetaBlob.java" binary="false">    
+    <position height="-1" width="-1" x="376" y="1872"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <nesting>    
+    <end type="SOURCE" nodeId="10"/>    
+    <end type="TARGET" nodeId="12"/>  
+  </nesting>  
+  <nesting>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </nesting>  
+  <generalization>    
+    <end type="SOURCE" nodeId="11"/>    
+    <end type="TARGET" nodeId="13"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="15"/>    
+    <end type="TARGET" nodeId="7"/>  
+  </generalization>  
+  <realization>    
+    <end type="SOURCE" nodeId="1"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </realization>  
+  <generalization>    
+    <end type="SOURCE" nodeId="1"/>    
+    <end type="TARGET" nodeId="13"/>  
+  </generalization>  
+  <nesting>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="8"/>  
+  </nesting>  
+  <nesting>    
+    <end type="SOURCE" nodeId="15"/>    
+    <end type="TARGET" nodeId="14"/>  
+  </nesting>  
+  <generalization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <association>    
+    <end type="SOURCE" nodeId="11" navigable="false">      
+      <attribute name="_metaBlobInfo"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting>    
+    <end type="SOURCE" nodeId="5"/>    
+    <end type="TARGET" nodeId="6"/>  
+  </nesting>  
+  <nesting>    
+    <end type="SOURCE" nodeId="11"/>    
+    <end type="TARGET" nodeId="10"/>  
+  </nesting>  
+  <generalization>    
+    <end type="SOURCE" nodeId="7"/>    
+    <end type="TARGET" nodeId="1"/>  
+  </generalization>  
+  <association>    
+    <end type="SOURCE" nodeId="10" navigable="false">      
+      <attribute name="_selectQueryMap"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" nodeId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting>    
+    <end type="SOURCE" nodeId="11"/>    
+    <end type="TARGET" nodeId="9"/>  
+  </nesting>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

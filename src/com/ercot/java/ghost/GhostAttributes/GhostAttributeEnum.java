@@ -1,0 +1,40 @@
+package com.ercot.java.ghost.GhostAttributes;
+
+public enum GhostAttributeEnum implements IGhostAttribute{
+
+	uidsourcesetlpoint,
+	uidelement,
+	crrofferid,
+	uidmktinputheader,
+	uidbilldeterminant,
+	crraccthldrcode,
+	uidasmarket,
+	uomcode,
+	savechannel,
+	uidmarket,
+	uidsinksetlpoint,
+	starttype,
+	starttime,
+	stoptime,
+	crrid,
+	rucid,
+	uidflowgate,
+	mktconstraintcode,
+	resourceid,
+	saverecorder,
+	qsecode,
+	uidsetlpoint,
+	lsuser,
+	uidresource,
+	tdspcode,
+	losscode,
+	lstime,
+	primaryKey,
+	repcode,
+	ufezonecode,
+	profilecode,
+	method,
+	segment,
+	uidstatementsched;
+	
+}
